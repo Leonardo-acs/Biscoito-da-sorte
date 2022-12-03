@@ -7,7 +7,7 @@ function App() {
   const [joke, setJoke] = useState("");
   const [cookieIsOpen, setcookieIsOpen] = useState(false);
 
-  const getPhrase = () => {
+  const getPhrase = () => { 
     setcookieIsOpen(true)
     Axios.get('https://type.fit/api/quotes').then(
       (response) => {
